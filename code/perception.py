@@ -118,17 +118,17 @@ def perception_step(Rover):
     Rover.vision_image[:, :, 0] =threshold_obstacle
     Rover.vision_image[:, :, 1] =threshold_rock
     Rover.vision_image[:, :, 2] =threshold_terrain
-	
+
     # 5) Convert map image pixel values to rover-centric coords
     xpix0, ypix0 = rover_coords(Rover.vision_image[:,:,0])
     xpix1, ypix1 = rover_coords(Rover.vision_image[:,:,1])
     xpix2, ypix2 = rover_coords(Rover.vision_image[:,:,2])
-	
+
     # 6) Convert rover-centric pixel values to world coordinates
     rover_obstacle = pix_to_world(xpix0, ypix0, Rover.pos[0], Rover.pos[1], Rover.yaw, 200, 10)
     rover_rock     = pix_to_world(xpix1, ypix1, Rover.pos[0], Rover.pos[1], Rover.yaw, 200, 10)
     rover_terrain  = pix_to_world(xpix2, ypix2, Rover.pos[0], Rover.pos[1], Rover.yaw, 200, 10)
-	
+
     # 7) Update Rover worldmap (to be displayed on right side of screen)
         # Example: Rover.worldmap[obstacle_y_world, obstacle_x_world, 0] += 1
         #          Rover.worldmap[rock_y_world, rock_x_world, 0] += 1
@@ -136,7 +136,7 @@ def perception_step(Rover):
     Rover.worldmap[rover_obstacle[1], rover_obstacle[0], :]   += [255,0,0]  
     Rover.worldmap[rover_rock[1]    , rover_rock[0]    , :]   += [0,255,0]  
     Rover.worldmap[rover_terrain[1] , rover_terrain[0] , :]   += [0,0,255]  
-		
+
     # 8) Convert rover-centric pixel positions to polar coordinates
     # Update Rover pixel distances and angles
         # Rover.nav_dists = rover_centric_pixel_distances

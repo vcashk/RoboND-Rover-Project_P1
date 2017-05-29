@@ -11,6 +11,7 @@ def decision_step(Rover):
 
     # Example:
     # Check if we have vision data to make decisions with
+       
     if Rover.nav_angles is not None:
         # Check for Rover.mode status
         if Rover.mode == 'forward': 

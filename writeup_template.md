@@ -66,7 +66,7 @@ Here is an example of how to include an image in your writeup.
 You may refer to the below images for the actual results obtained :
 [//]: # (Image References)
 
-[image1]: ./output/AutonomousNavigationandMapping/implementation,png
+[image1]: ./output/AutonomousNavigationandMapping/implementation.png
 
 #### 1. Populate the `process_image()` function with the appropriate analysis steps to map pixels identifying navigable terrain, obstacles and rock samples into a worldmap.  Run `process_image()` on your test data using the `moviepy` functions provided to create video output of your result. 
 And another! 
@@ -81,13 +81,13 @@ And another!
 
 **Note: running the simulator with different choices of resolution and graphics quality may produce different results, particularly on different machines!  Make a note of your simulator settings (resolution and graphics quality set on launch) and frames per second (FPS output to terminal by `drive_rover.py`) in your writeup when you submit the project so your reviewer can reproduce your results.**
 
-*The logic behind  the rover is that the Rover starts always with a move forward status, under a maximuim velocity limit.In case the rover finds a lack of navigable terrain (Rov.nav_angles) the rover will start breaking and turn into stop mode. The rover will then steer around until a suffecient navigable terrain is found and will move on forward.My contribution also included in tuning the parameters such as limitation of Rov.nav_angles to determine wether the robot should keep moving forward or stop. Other parameter tuned were also the velocity parameters in order to map most of the area in fastest way possible  
-My end results were able to secure a fidelty of no less then 80% and a mapping above 40% this can be tried in the simulation of the code
-There are number f areas which could be improved most notably the fact that once the rover revists already a mapped area time is lost this is a concept which could be further worked on to improve the results. 
+*The logic behind  the rover is that the Rover starts always with a move forward status, under a maximuim velocity limit.In case the rover finds a lack of navigable terrain (Rov.nav_angles) the rover will start slowing down  and turn into stop mode. The rover will then steer around until a suffecient navigable terrain is found and will move on forward.
+Approach also includes in tuning the parameters to limit Rov.nav_angles to determine if the robot should keep moving forward or stop. 
+Further velocity parameters tweaked in order to map most of the area in fastest way possible  
+Results obtained: fidelty 56.9% and a mapping  81.3% details of settings included
 
-
-
-
+[image2]: ./output/AutonomousNavigationandMapping/AutonomousModel.png
+[image3]: ./output/AutonomousNavigationandMapping/Settings.png
 ![alt text][image3]
 
 
