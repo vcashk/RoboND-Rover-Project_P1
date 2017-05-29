@@ -45,7 +45,7 @@ The decision_step() function within the decision.py was tuned for better deicisi
 [image2]: ./calibration_images/example_grid1.jpg
 [image3]: ./output/AutonomousNavigationandMapping/AutonomousModel.png
 [image4]: ./output/AutonomousNavigationandMapping/Settings.png
-[image4]: ./output/new_test_mapping.mp4
+[image5]: ./output/new_test_mapping.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/916/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
