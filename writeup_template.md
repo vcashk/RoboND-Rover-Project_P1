@@ -76,6 +76,8 @@ And another!
 ![alt text][image2]
 
 ![alt text][image5]
+
+[![IMAGE ALT TEXT](./output/new_test_mapping.mp4](./output/new_test_mapping.mp4 "Rover Video")
 ### Autonomous Navigation and Mapping
 
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
