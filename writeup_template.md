@@ -41,9 +41,10 @@ The decision_step() function within the decision.py was tuned for better deicisi
 
 [//]: # (Image References)
 
-[image1]: ./misc/rover_image.jpg
+[image1]: ./output/AutonomousNavigationandMapping/implementation.png
 [image2]: ./calibration_images/example_grid1.jpg
-[image3]: ./calibration_images/example_rock1.jpg 
+[image3]: ./output/AutonomousNavigationandMapping/AutonomousModel.png
+[image4]: ./output/AutonomousNavigationandMapping/Settings.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/916/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -66,7 +67,7 @@ Here is an example of how to include an image in your writeup.
 You may refer to the below images for the actual results obtained :
 [//]: # (Image References)
 
-[image1]: ./output/AutonomousNavigationandMapping/implementation.png
+![alt text][image1]
 
 #### 1. Populate the `process_image()` function with the appropriate analysis steps to map pixels identifying navigable terrain, obstacles and rock samples into a worldmap.  Run `process_image()` on your test data using the `moviepy` functions provided to create video output of your result. 
 And another! 
@@ -86,9 +87,9 @@ Approach also includes in tuning the parameters to limit Rov.nav_angles to deter
 Further velocity parameters tweaked in order to map most of the area in fastest way possible  
 Results obtained: fidelty 56.9% and a mapping  81.3% details of settings included
 
-![alt text][image2]: ./output/AutonomousNavigationandMapping/AutonomousModel.png
+![alt text][image3]
 
-![alt text][image3]: ./output/AutonomousNavigationandMapping/Settings.png
+![alt text][image4]
 
 
 
