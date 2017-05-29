@@ -84,7 +84,13 @@ And another!
 ### Autonomous Navigation and Mapping
 
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
-*The prection_step() was filled in basically with most of the function used as used previously in the jupyter notebook only difference is that the Rover.Vision clearly mapped the enviroment under 3 different categories (Rock , obstacle and free space ) you may refer to the below image in the lower left showing this mapping. The simulation for autonomous navigation ran on linux under a resolution of 1024x768 with a graphics quality of "Good"
+The perception_step() used similar approach as provided except that the Rover.Vision clearly mapped the enviroment under 3 different categories (Rock , obstacle and free space ) you may refer to the below image in the lower left showing this mapping. The simulation for autonomous executed  on mac under a resolution of 1024x768 with a graphics quality of "Good". Details of setting provided below:
+
+![alt text][image3]
+
+![alt text][image4]
+
+
 
 #### 2. Launching in autonomous mode your rover can navigate and map autonomously.  Explain your results and how you might improve them in your writeup.  
 
@@ -95,9 +101,6 @@ Approach also includes in tuning the parameters to limit Rov.nav_angles to deter
 Further velocity parameters tweaked in order to map most of the area in fastest way possible  
 Results obtained: fidelty 56.9% and a mapping  81.3% details of settings included
 
-![alt text][image3]
-
-![alt text][image4]
 
 
 
