@@ -87,7 +87,8 @@ Further velocity parameters tweaked in order to map most of the area in fastest 
 Results obtained: fidelty 56.9% and a mapping  81.3% details of settings included
 
 [image2]: ./output/AutonomousNavigationandMapping/AutonomousModel.png
+
 [image3]: ./output/AutonomousNavigationandMapping/Settings.png
-![alt text][image3]
+
 
 
