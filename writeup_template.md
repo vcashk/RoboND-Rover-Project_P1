@@ -76,14 +76,10 @@ And another!
 
 ![alt text][image2]
 
+[![Here is the generated video](https://img.youtube.com/vi/-7773GYqS0E/0.jpg)](https://youtu.be/-7773GYqS0E)
 
-<script src="http://vjs.zencdn.net/4.0/video.js"></script>
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/-7773GYqS0E)
 
-<video id="pelican-installation" class="video-js vjs-default-skin" controls
-preload="auto" width="683" height="384" poster="/static/screencasts/pelican-installation.png"
-data-setup="{}">
-<source src="./output/new_test_mapping.mp44" type='video/mp4'>
-</video>
 
 [![IMAGE ALT TEXT](./output/new_test_mapping.mp4](./output/new_test_mapping.mp4 "Rover Video")
 ### Autonomous Navigation and Mapping
