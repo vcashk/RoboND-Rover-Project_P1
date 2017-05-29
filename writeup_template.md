@@ -3,11 +3,6 @@
 
 ---
 
-def video(fname, mimetype):
-    from IPython.display import HTML
-    video_encoded = open(fname, "rb").read().encode("base64")
-    video_tag = '<video controls alt="test" src="data:video/{0};base64,{1}">'.format(mimetype, video_encoded)
-    return HTML(data=video_tag)
 
 
 **The goals / steps of this project are the following:**  
@@ -81,7 +76,14 @@ And another!
 
 ![alt text][image2]
 
-!video("./output/new_test_mapping.mp4", "mp4")
+
+<script src="http://vjs.zencdn.net/4.0/video.js"></script>
+
+<video id="pelican-installation" class="video-js vjs-default-skin" controls
+preload="auto" width="683" height="384" poster="/static/screencasts/pelican-installation.png"
+data-setup="{}">
+<source src="./output/new_test_mapping.mp44" type='video/mp4'>
+</video>
 
 [![IMAGE ALT TEXT](./output/new_test_mapping.mp4](./output/new_test_mapping.mp4 "Rover Video")
 ### Autonomous Navigation and Mapping
